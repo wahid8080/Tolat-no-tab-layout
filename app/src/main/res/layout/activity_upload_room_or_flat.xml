@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadRoomOrFlat">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/mLayout1"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="225dp">
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:id="@+id/image1"
+                    android:layout_weight="1"
+                    android:src="@drawable/versity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:id="@+id/image2"
+                    android:layout_weight="1"
+                    android:src="@drawable/versity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/mLayout2"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="225dp">
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:id="@+id/image3"
+                    android:layout_weight="1"
+                    android:src="@drawable/versity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:id="@+id/image4"
+                    android:layout_weight="1"
+                    android:src="@drawable/versity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/ic_photo_camera_black_24dp"
+                android:id="@+id/upload"
+                android:onClick="imageUpload"
+                android:textColor="#FFFFFF"
+                android:text="Upload Image"
+                android:background="@drawable/button_background_pink"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/familyId"
+                    android:textSize="20dp"
+                    android:text="Family"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/bachelorId"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20dp"
+                    android:text="Bachelor "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:id="@+id/otherId"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20dp"
+                    android:text="Other"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@color/colorFlowerDark"
+                android:layout_width="match_parent"
+                android:layout_height="2dp">
+
+            </View>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/razukId"
+                    android:textSize="20dp"
+                    android:text="Rajuk approval"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/gateGardId"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20dp"
+                    android:text="Gate Gard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:id="@+id/internetId"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20dp"
+                    android:text="Internet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:id="@+id/waterLineId"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20dp"
+                    android:text="Water Line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:id="@+id/geneterId"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20dp"
+                    android:text="Generator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="30dp"
+                    android:background="@color/colorFlowerDark"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp">
+
+                </View>
+
+                <TextView
+                    android:text="Contact : "
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="22dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/contuctUploadProduct"
+                    android:background="@drawable/button_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:text="House Name : "
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="22dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:inputType="text"
+                    android:id="@+id/houseNameUploadProduct"
+                    android:background="@drawable/button_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:text="House Area : "
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="22dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:inputType="text"
+                    android:id="@+id/houseAreaUploadProduct"
+                    android:background="@drawable/button_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:text="Road Name / No : "
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="22dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:inputType="text"
+                    android:id="@+id/roadNumberUploadProduct"
+                    android:background="@drawable/button_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:text="House Number : "
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="22dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:inputType="date"
+                    android:id="@+id/houseNumber"
+                    android:background="@drawable/button_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:text="Price"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="22dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/housePrice"
+                    android:background="@drawable/button_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+
+                <TextView
+                    android:text="House Details : "
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="22dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:inputType="text"
+                    android:gravity="top"
+                    android:id="@+id/houseDetailsUploadProduct"
+                    android:background="@drawable/button_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" />
+
+                <Button
+                    android:onClick="submitData"
+                    android:background="@drawable/button_background_pink"
+                    android:textColor="@color/colorWhite"
+                    android:text="Submit"
+                    android:layout_margin="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textSize="20dp"/>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

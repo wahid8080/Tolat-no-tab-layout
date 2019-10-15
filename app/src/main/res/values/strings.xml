@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ToLate</string>
+
+    <string name="govNNotice">The following holiday dates in the 2018/2019 school year are
+        for primary education, special education and secondary education. In secondary vocational education
+        (MBO) and higher education, institutions are free to set their own holiday dates.
+    </string>
+</resources>

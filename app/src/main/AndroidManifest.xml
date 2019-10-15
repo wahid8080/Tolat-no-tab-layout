@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wahid.tolate"
+    android:installLocation="preferExternal">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".YourRent"></activity>
+        <activity android:name=".Empty" />
+        <activity android:name=".FaceRoomOrFlat" />
+        <activity android:name=".ViewSitlList" />
+        <activity android:name=".ViewHostelList" />
+        <activity android:name=".ViewFlatList" />
+        <activity android:name=".ViewRoomList" />
+        <activity android:name=".UploadRenderInfo" />
+        <activity android:name=".UploadRoomOrFlat" />
+        <activity android:name=".Dashbord" />
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomeOwnerProfile" />
+        <activity android:name=".RenterProfile" />
+        <activity android:name=".Registration" />
+        <activity android:name=".UploadClintInfo" />
+        <activity android:name=".Category" />
+    </application>
+
+</manifest>
